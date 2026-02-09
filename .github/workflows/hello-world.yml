@@ -6,14 +6,11 @@ jobs:
  hello-job:
   runs-on: ubuntu-latest
   steps:
-   - name: Echo text
-     run: echo "Hello, world!"
-
    - name: copying the log file
      uses: actions/checkout@v4
 
    - name: copying the file 
-     run:  cp ./text.log  .
+     run:  cp ./text.log  /tmp
 
    - name: running ls to validate
      run: ls -al
