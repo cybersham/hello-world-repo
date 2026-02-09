@@ -7,7 +7,7 @@ on:
         description: 'Log level'
         required: true
         default: 'warning'
-        type: dropdown
+        type: number
         options:
         - info
         - warning
