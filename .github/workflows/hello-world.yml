@@ -9,6 +9,15 @@ jobs:
    - name: Echo text
      run: echo "Hello, world!"
 
+   - name: copying the log file
+     run: cp ./text.log  .
+
+   - name: running ls to validate
+     run: ls -al
+     
+
+
+
 
 # Workflow should have a Job named - hello-job
 # a. Run Job on - ubuntu-latest runner
