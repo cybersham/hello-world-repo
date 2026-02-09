@@ -10,11 +10,13 @@ jobs:
      run: echo "Hello, world!"
 
    - name: copying the log file
-     run: cp ./text.log  .
+     uses: actions/checkout@v4
+     run: |
+     cp ./text.log  .
 
    - name: running ls to validate
      run: ls -al
-     
+
 
 
 
