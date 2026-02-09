@@ -11,9 +11,10 @@ jobs:
 
    - name: copying the log file
      uses: actions/checkout@v4
-     run: |
-          cp ./text.log  .
-          
+
+   - name: copying the file 
+     run:  cp ./text.log  .
+
    - name: running ls to validate
      run: ls -al
 
